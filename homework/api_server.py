@@ -1,6 +1,13 @@
+## api_server.py
+# Usage from command line:
+# curl http://127.0.0.1:5000 -X POST -H "Content-Type: application/json" \
+# -d '{"bathrooms": "2", "bedrooms": "3", "sqft_living": "1800", \
+# "sqft_lot": "2200", "floors": "1", "waterfront": "1", "condition": "3"}'
+#
+
 ## Código para llamar el curl en Windows ##
-# curl http://127.0.0.1:5000 -X POST -H "Content-Type: application/json"
-# -d "{\"bathrooms\": \"2\", \"bedrooms\": \"3\", \"sqft_living\": \"1800\",
+#curl http://127.0.0.1:5000 -X POST -H "Content-Type: application/json" 
+# -d "{\"bathrooms\": \"2\", \"bedrooms\": \"3\", \"sqft_living\": \"1800\", 
 # \"sqft_lot\": \"2200\", \"floors\": \"1\", \"waterfront\": \"1\", \"condition\": \"3\"}"
 
 import pickle
@@ -41,3 +48,6 @@ def index():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+
